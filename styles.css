@@ -1,0 +1,10 @@
+:root{
+    --clr-primary-300:
+}
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
