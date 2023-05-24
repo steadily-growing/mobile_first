@@ -34,11 +34,64 @@ p{
 h1,
 h2,
 h3{
+  color: var(--clr-primary-400);
   font-family: var(--ff-accent);
  font-weight: 900 ;
  line-height: 1 ;
 }
 
+.split{
+  display: flex;
+  flex-direction: column;
+}
+
+@media(min-width:40em){
+  .split{
+    flex-direction: row;
+
+  }
+
+  .split > * {
+    flex-basis: 100%;
+  }
+
+  .split > * + * {
+    margin-left: 2em;
+  }
+}
+img{
+  display: block;
+  max-width: 100%;
+}
+h2,
+h3,
+p{
+  margin-bottom: 1em;
+}
+
+
+@media(min-width:40em){
+header,
+section{
+  padding:7rem 0;
+}
+}
+ 
+
+
+header,
+section{
+  padding: 3rem 0;
+}
+
+
+.text-center{
+  text-align: center;
+}
+.container{
+  margin-inline: auto;
+  width: min(90% , 70.5rem);
+}
 
 .bg-light {
   background-color: var(--clr-primary-200);
